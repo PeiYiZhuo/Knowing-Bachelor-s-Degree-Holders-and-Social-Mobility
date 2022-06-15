@@ -1,8 +1,11 @@
 ---
+layout: post
 title: "The Effect of Bridging Social Capital on Social Mobility"
-author: "Pei Yi Zhuo"
-date: "`r Sys.Date()`"
-output: html_document
+description: This is the paper I wrote as the final project for Data Science and Society, a class offered by the Duke University Sociology Department. It also incorporates work I did for Methods of Social Research, another sociology class. It demonstrates my ability to conduct exploratory data analysis and uses ordinary least squares and logistic regression. In the paper, I found evidence that relationships with high-status individuals are associated with upward mobility.
+output: 
+  md_document:
+    variant: markdown_github
+    preserve_yaml: true
 ---
 
 ```{r setup, include=FALSE}
@@ -502,10 +505,10 @@ ols_output %>%
          ) %>%
   rename(Term = term, Estimate = estimate, `Std. error` = std.error,
          Statistic = statistic, `p-value` = p.value) %>%
-  kable(digits = 3,
+  kable(format = "markdown",
+        digits = 3,
         caption = paste("Figure 3: Ordinary least squares", 
-                        "regression model output")) %>%
-  kable_styling()
+                        "regression model output"))
 ```
 
 \*p < 0.05 
@@ -551,9 +554,9 @@ gss_all %>%
          ) %>%
   rename(Term = term, `Estimate` = estimate, `Std. error` = std.error, 
          Statistic = statistic, `p-value` = p.value) %>%
-  kable(digits = 3,
-        caption = "Figure 4: Logistic regression model output") %>%
-  kable_styling()
+  kable(format = "markdown",
+        digits = 3,
+        caption = "Figure 4: Logistic regression model output") 
 ```
 
 \*p < 0.05 
