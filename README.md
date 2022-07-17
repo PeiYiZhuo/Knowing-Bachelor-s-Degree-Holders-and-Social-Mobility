@@ -1,2 +1,2 @@
-# The Effect of Bridging Social Capital on Social Mobility
+# Knowing Bachelor's Degree Holders and Social Mobility
 Using R (ggplot2, dplyr, etc.) to analyze data from the General Social Survey, I discovered that knowing bachelor's degree holders is associated with upward mobility. This project demonstrates my ability to tell a coherent story using data. I combined data visualization, ordinary least squares regression, and logistic regression to arrive at a meaningful insight.
